@@ -8,16 +8,15 @@
  * @var $this \yii\web\View
  * @var $slideshow \melledijkstra\slideshow\Slideshow
  */
-use melledijkstra\slideshow\assets\SlideshowAsset;
+use melledijkstra\slideshow\assets\SwiperAsset;
 use yii\web\View;
 
 $options = json_encode($slideshow->clientOptions, JSON_FORCE_OBJECT);
 $js = <<<JS
-var swiper{$slideshow->swiperId} = new Swiper('.swiper-container', $options);
+var swiper{$slideshow->swiperId} = new Swiper('.{$slideshow->swipeContainerClass}', $options);
 JS;
 
-
-SlideshowAsset::register($this);
+SwiperAsset::register($this);
 $this->registerJs($js, View::POS_READY);
 
 ?>

@@ -1,6 +1,6 @@
 Yii2 Slideshow
 ==============
-A simple slideshow (not only for images). It generates a view
+A simple slideshow made with http://idangero.us/swiper.
 
 Installation
 ------------
