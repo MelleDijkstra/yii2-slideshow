@@ -1,0 +1,15 @@
+# PHPStorm / IDE Files
+.idea
+
+### OPERATING SYSTEM
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+### COMPOSER AND OTHER TOOLS
+
+# composer vendor dir
+/vendor
