@@ -1,0 +1,21 @@
+{
+    "name": "melledijkstra/yii2-slideshow",
+    "description": "A simple slideshow (not only for images). It generates a view",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","slideshow"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "MelleDijkstra",
+            "email": "melle210202@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "melledijkstra\\slideshow\\": ""
+        }
+    }
+}
