@@ -28,4 +28,22 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \melledijkstra\slideshow\AutoloadExample::widget(); ?>```
+<?= \melledijkstra\slideshow\Slideshow::widget([
+    'items' => [
+        [
+            'content' => 'Slide 1', // tip: $this->render('view');
+        ],
+        [
+            'content' => 'Slide 2',
+            'active' => true,
+        ]
+    ],
+    // The client options will be passed to the Javascript swiper library
+    // @see http://idangero.us/swiper/api/#parameters
+    'clientOptions' => [
+        'direction' => 'horizontal',
+        'speed' => 300,    
+        'autoplay' => true,
+    ]
+]); ?>
+```
